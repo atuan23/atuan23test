@@ -1,0 +1,21 @@
+# local profile that allows to run Broker, Core and UI on a single machine with more verbose logging
+
+server:
+  port: 8082
+address: "localhost"
+
+registry:
+  allowRegistration: true
+  allowOverride: true
+  interfaces:
+    - id: lightning-service
+      contract:
+        services:
+          - name: switchLight
+            id: switchLight
+            endpoint: /switchLight
+            parameters:
+              - name: colour
+                type: INTEGER
+              - name: intensity
+                type: INTEGER
