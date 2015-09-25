@@ -1,7 +1,7 @@
 # local profile that allows to run Broker, Core and UI on a single machine with more verbose logging
 
 server:
-  port: 8082
+  port: 8097
 
 address: "localhost"
 protocol: http
